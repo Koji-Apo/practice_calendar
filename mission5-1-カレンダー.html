@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>カレンダー</title>
+        <style>
+            h1{
+                font-family: fantasy;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            td{
+                text-align: center;
+                border: 1px solid rgb(190, 188, 188);
+                padding: 10px;
+            }
+            td:first-child{
+                color: red;
+            }
+            td:last-child{
+                color: blue;
+            }
+            .kyou{
+                background-color: rgb(90, 239, 147);
+            }
+            .usuji{
+                opacity: 0.3;
+            }
+            button{
+                font-size: medium;
+                font-weight: bold;
+                color: white;
+                border-radius: 7px;
+                background: #062161a3;
+                border: solid 3px #465e94;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <p>
+        <button onclick="sengetushow()">前の月へ</button>
+        <button onclick="raigetushow()">次の月へ</button>
+    </p>
+    <div id="calendar"></div>
+    <script src="mission5-1-k.js"></script>
+</html>
